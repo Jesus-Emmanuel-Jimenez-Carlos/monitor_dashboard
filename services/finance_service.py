@@ -10,7 +10,14 @@ from dataclasses import dataclass
 from typing import Optional
 
 import pandas as pd
+import requests
 import yfinance as yf
+
+# ── custom session for cloud deployments ────────────────────────────
+_session = requests.Session()
+_session.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+})
 
 # ── predefined assets ───────────────────────────────────────────────
 ASSETS: dict[str, str] = {
@@ -52,7 +59,7 @@ def get_quote(symbol: str) -> Optional[FinanceData]:
         Yahoo Finance ticker (e.g. ``"AAPL"``, ``"BTC-USD"``).
     """
     try:
-        ticker = yf.Ticker(symbol)
+        ticker = yf.Ticker(symbol, session=_session)
         info = ticker.info or {}
         hist = ticker.history(period="1mo")
 
