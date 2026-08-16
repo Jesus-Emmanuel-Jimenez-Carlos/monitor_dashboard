@@ -9,19 +9,28 @@
 
 ### Real-time Weather & Finance Monitoring Platform
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://monitor-dashboard.streamlit.app/)
-&nbsp;&nbsp;
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-&nbsp;&nbsp;
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-
 <br/>
 
-<a href="https://monitor-dashboard.streamlit.app/">
-  <img src="https://img.shields.io/badge/🚀_PROBAR_LA_APP_EN_VIVO-6366f1?style=for-the-badge&logoColor=white" alt="Probar la App" height="50"/>
+<a href="https://monitor-dashboard.onrender.com">
+  <img src="https://img.shields.io/badge/🚀_VER_APP_EN_VIVO-6366f1?style=for-the-badge&logoColor=white" alt="Ver App en Vivo" height="55"/>
 </a>
 
 <br/>
+<br/>
+
+<a href="https://render.com/deploy?repo=https://github.com/Jesus-Emmanuel-Jimenez-Carlos/monitor_dashboard">
+  <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" height="40"/>
+</a>
+
+<br/>
+<br/>
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Plotly](https://img.shields.io/badge/Plotly-5.x-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com)
+[![SQLite](https://img.shields.io/badge/SQLite-3-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+
 <br/>
 
 <p align="center">
@@ -88,6 +97,20 @@
 
 <br/>
 
+## 🚀 Demo en Vivo
+
+> **¿Quieres ver la app funcionando?** Solo haz clic:
+>
+> 👉 **[monitor-dashboard.onrender.com](https://monitor-dashboard.onrender.com)** 👈
+>
+> _Sin registro, sin contraseña, sin instalaciones. Acceso inmediato._
+
+<br/>
+
+---
+
+<br/>
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -95,6 +118,8 @@ monitor_dashboard/
 │
 ├── 📄 app.py                        # Aplicación principal (Streamlit)
 ├── 📄 requirements.txt              # Dependencias del proyecto
+├── 📄 Procfile                      # Configuración para Render
+├── 📄 render.yaml                   # Blueprint de despliegue
 ├── 📄 .gitignore                    # Archivos ignorados por Git
 ├── 📄 README.md                     # Documentación del proyecto
 │
@@ -141,7 +166,7 @@ monitor_dashboard/
 
 <br/>
 
-## ⚡ Inicio Rápido
+## ⚡ Instalación Local
 
 ### Requisitos previos
 
@@ -149,7 +174,7 @@ monitor_dashboard/
 - **pip** (incluido con Python)
 - Conexión a Internet
 
-### Instalación
+### Pasos
 
 ```bash
 # 1️⃣ Clona el repositorio
@@ -241,6 +266,8 @@ streamlit run app.py
 <details>
 <summary><b>WeatherLog</b> — Registros meteorológicos</summary>
 
+<br/>
+
 | Columna | Tipo | Descripción |
 |:--------|:-----|:------------|
 | `id` | `Integer` | Clave primaria (auto-increment) |
@@ -257,6 +284,8 @@ streamlit run app.py
 
 <details>
 <summary><b>FinanceLog</b> — Registros financieros</summary>
+
+<br/>
 
 | Columna | Tipo | Descripción |
 |:--------|:-----|:------------|
@@ -324,8 +353,8 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo [`LICENSE`](LI
 
 <br/>
 
-<a href="https://monitor-dashboard.streamlit.app/">
-  <img src="https://img.shields.io/badge/🚀_PROBAR_LA_APP-6366f1?style=for-the-badge" alt="Probar" height="40"/>
+<a href="https://monitor-dashboard.onrender.com">
+  <img src="https://img.shields.io/badge/🚀_VER_APP_EN_VIVO-6366f1?style=for-the-badge" alt="Ver App" height="40"/>
 </a>
 
 <br/>
