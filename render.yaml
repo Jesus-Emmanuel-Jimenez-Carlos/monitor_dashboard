@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: monitor-dashboard
+    name: monitor-dashboard-jesuse
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
